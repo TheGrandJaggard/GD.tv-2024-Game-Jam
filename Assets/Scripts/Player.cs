@@ -29,7 +29,8 @@ public class Player : MonoBehaviour
         if (Input.GetButtonDown("Fire2"))
         {
             // special (gun or trap)
-            GetComponent<Health>().Damage(120f);
+            // right now this is just a health / damage test
+            GetComponent<Health>().Damage(40f);
         }
     }
 
