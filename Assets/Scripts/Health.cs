@@ -1,12 +1,11 @@
-
+using System;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class Health : MonoBehaviour
 {
     [SerializeField] float health;
     private float currentHealth;
-    public UnityEvent death;
+    public Action death;
 
     private void Start()
     {
@@ -15,6 +14,8 @@ public class Health : MonoBehaviour
 
     public void Damage(float damage)
     {
+        Debug.Log($"{name} took {damage}/{currentHealth} damge");
+
         currentHealth -= damage;
         if (currentHealth <= 0f)
         {

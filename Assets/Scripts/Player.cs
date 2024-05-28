@@ -5,8 +5,14 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] float speed;
+    private float attackCooldown;
 
-    void Update()
+    private void Start()
+    {
+        GetComponent<Health>().death += Die;
+    }
+
+    private void Update()
     {
         Act();
         Move();
@@ -14,13 +20,16 @@ public class Player : MonoBehaviour
 
     private void Act()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        attackCooldown -= Time.deltaTime;
+        if (Input.GetButtonDown("Fire1") && attackCooldown < 0)
         {
-            // attack
+            GetComponent<Animator>().SetTrigger("Attack");
+            attackCooldown = 0.6f;
         }
-        if (Input.GetKeyDown(KeyCode.Mouse1))
+        if (Input.GetButtonDown("Fire2"))
         {
             // special (gun or trap)
+            GetComponent<Health>().Damage(120f);
         }
     }
 
@@ -34,5 +43,10 @@ public class Player : MonoBehaviour
         GetComponent<Animator>().SetFloat("Speed", Mathf.Abs(hMovement) + Mathf.Abs(vMovement));
         if (hMovement < -0.01f) { transform.rotation = new Quaternion(0f, 180f, 0f, 0f); }
         if (hMovement > 0.01f)  { transform.rotation = new Quaternion(0f, 0f, 0f, 0f); }
+    }
+
+    private void Die()
+    {
+        Debug.Log("I'm dying!");
     }
 }
