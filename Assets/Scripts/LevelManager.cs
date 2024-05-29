@@ -30,6 +30,7 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
+        currentLevel = -1;
         StartCoroutine(SpawnNextWave());
     }
 

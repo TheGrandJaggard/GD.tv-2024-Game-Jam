@@ -14,8 +14,6 @@ public class Enemy : MonoBehaviour
     private bool alive = true;
 
 
-
-
     private void Start()
     {
         GetComponent<Health>().death += Die;
@@ -77,7 +75,6 @@ public class Enemy : MonoBehaviour
     private void Die()
     {
         alive = false;
-        GetComponent<Animator>().speed = 0;
 
         GetComponent<Collider2D>().enabled = false;
 
@@ -103,9 +100,11 @@ public class Enemy : MonoBehaviour
 
     private void Knockback(float magnitude)
     {
-        Vector3 targetVector = GameObject.FindGameObjectWithTag("Player").transform.position - transform.position;
+        // TODO Use EXPLOSION force instead?
 
-        var targetLocation = -targetVector.normalized * magnitude;
-        transform.DOMove(targetLocation, 1f).SetEase(Ease.OutExpo);
+        // Vector3 targetVector = GameObject.FindGameObjectWithTag("Player").transform.position - transform.position;
+
+        // var targetLocation = -targetVector.normalized * magnitude;
+        // transform.DOMove(targetLocation, 1f).SetEase(Ease.OutExpo);
     }
 }

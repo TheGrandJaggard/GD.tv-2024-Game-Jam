@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
         if (Input.GetButton("Fire1") && attackCooldown < 0)
         {
             GetComponent<Animator>().SetTrigger("Attack");
-            attackCooldown = 0.4f;
+            attackCooldown = 0.3f;
             // Hit();
         }
         if (Input.GetButton("Fire2"))
