@@ -1,14 +1,14 @@
 using DG.Tweening;
 using UnityEngine;
 
-[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(ColorFader))]
 [RequireComponent(typeof(Health))]
 public class Enemy : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] EnemyTargetType targetType;
     [SerializeField] float damage;
-    [SerializeField] bool spriteFacingRight;
+    [SerializeField] float knockback;
     private float attackCooldown;
     private bool haveBeenAttacked = false;
     private bool alive = true;
@@ -41,8 +41,7 @@ public class Enemy : MonoBehaviour
         var targetDirection = targetVector.normalized;
         transform.position = transform.position + (targetDirection * Time.deltaTime * speed);
 
-        if (targetVector.x < -0f == spriteFacingRight) { transform.rotation = new Quaternion(0f, 180f, 0f, 0f); }
-        if (targetVector.x > 0f == spriteFacingRight) { transform.rotation = new Quaternion(0f, 0f, 0f, 0f); }
+        GetComponent<ColorFader>().SetFacingRight(targetVector.x > 0f);
     }
 
     private Vector3 GetTarget()
@@ -100,11 +99,10 @@ public class Enemy : MonoBehaviour
 
     private void Knockback(float magnitude)
     {
-        // TODO Use EXPLOSION force instead?
+        Vector3 targetVector = GameObject.FindGameObjectWithTag("Player").transform.position - transform.position;
 
-        // Vector3 targetVector = GameObject.FindGameObjectWithTag("Player").transform.position - transform.position;
+        var targetDirection = -targetVector.normalized;
 
-        // var targetLocation = -targetVector.normalized * magnitude;
-        // transform.DOMove(targetLocation, 1f).SetEase(Ease.OutExpo);
+        GetComponent<Rigidbody2D>().AddForce(targetDirection * knockback, ForceMode2D.Impulse);
     }
 }

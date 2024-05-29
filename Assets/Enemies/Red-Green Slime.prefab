@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1624340537903296783, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -36993427, guid: 205565a733674f840a888f624e7740d0, type: 3}
     - target: {fileID: 3069571191198779976, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Name
       value: Red-Green Slime
@@ -16,6 +20,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 3373415295883372487, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6355554dc707b954093d8584788729cd, type: 2}
     - target: {fileID: 6102937645611212799, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Controller
       value: 
@@ -80,6 +88,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6552918995226010708, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -270347443, guid: e8e7b7a8a37ccca47bdd6f2da40a6e99, type: 3}
     - target: {fileID: 6893873108110592998, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -88,6 +100,10 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 7859464481732078349, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 287fced5f4240944aa2fa1f82073544e, type: 2}
     - target: {fileID: 8729874961586547706, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Size.y
       value: 1

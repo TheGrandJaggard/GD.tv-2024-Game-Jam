@@ -1,11 +1,12 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(ColorFader))]
 [RequireComponent(typeof(Health))]
 public class Player : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] float damage;
+    [SerializeField] float range;
     private float attackCooldown;
 
     private void Start()
@@ -24,9 +25,8 @@ public class Player : MonoBehaviour
         attackCooldown -= Time.deltaTime;
         if (Input.GetButton("Fire1") && attackCooldown < 0)
         {
-            GetComponent<Animator>().SetTrigger("Attack");
+            GetComponent<ColorFader>().SetAnimTrigger("Attack");
             attackCooldown = 0.3f;
-            // Hit();
         }
         if (Input.GetButton("Fire2"))
         {
@@ -43,9 +43,12 @@ public class Player : MonoBehaviour
 
         transform.position = transform.position + new Vector3(hMovement, vMovement, 0f);
 
-        GetComponent<Animator>().SetFloat("Speed", Mathf.Abs(hMovement) + Mathf.Abs(vMovement));
-        if (hMovement < -0.01f) { transform.rotation = new Quaternion(0f, 180f, 0f, 0f); }
-        if (hMovement > 0.01f)  { transform.rotation = new Quaternion(0f, 0f, 0f, 0f); }
+        GetComponent<ColorFader>().SetAnimFloat("Speed", Mathf.Abs(hMovement) + Mathf.Abs(vMovement));
+        
+        if (hMovement > 0.01f || hMovement < -0.01f)
+        {
+            GetComponent<ColorFader>().SetFacingRight(hMovement > 0f);
+        }
     }
 
     private void Die()
@@ -54,18 +57,19 @@ public class Player : MonoBehaviour
         Time.timeScale = 0;
     }
 
-    private void Hit() // called by animator
+    public void Hit() // called by animator relay
     {
+        // Debug.Log("Hit");
         var directionalOffset = Vector3.up * GetComponent<CapsuleCollider2D>().offset.y * transform.localScale.y
-            + (transform.rotation == new Quaternion() ? Vector3.left : Vector3.right);
-        Debug.Log($"transform.position + directionalOffset = {transform.position + directionalOffset}");
-        foreach (var other in Physics2D.OverlapCircleAll(transform.position + directionalOffset, 1f))
+            + (GetComponent<SpriteRenderer>().flipX ? Vector3.left : Vector3.right) * range;
+        
+        foreach (var other in Physics2D.OverlapCircleAll(transform.position + directionalOffset, range))
         {
             Debug.Log($"Hit {other.name}");
             if (other.gameObject.CompareTag("Enemy"))
             {
                 other.GetComponent<Health>().Damage(damage);
-                Debug.Log($"Damaged {other.name} with sword");
+                // Debug.Log($"Damaged {other.name} with sword");
             }
         }
     }
@@ -73,7 +77,7 @@ public class Player : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         var directionalOffset = Vector3.up * GetComponent<CapsuleCollider2D>().offset.y * transform.localScale.y
-            + (transform.rotation == new Quaternion() ? Vector3.left : Vector3.right);
-        Gizmos.DrawWireSphere(transform.position + directionalOffset, 1f);
+            + (GetComponent<SpriteRenderer>().flipX ? Vector3.left : Vector3.right) * range;
+        Gizmos.DrawWireSphere(transform.position + directionalOffset, range);
     }
 }

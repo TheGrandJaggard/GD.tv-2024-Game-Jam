@@ -11,6 +11,7 @@ public class Health : MonoBehaviour
     private void Start()
     {
         currentHealth = maxHealth;
+        GetComponent<ColorFader>()?.SetColor(currentHealth / maxHealth);
     }
 
     public void Damage(float damage)
@@ -22,6 +23,8 @@ public class Health : MonoBehaviour
         }
 
         Debug.Log($"{name} took {damage} damage. {currentHealth} health left.");
+        GetComponent<ColorFader>()?.SetColor(currentHealth / maxHealth);
+
         attacked?.Invoke();
     }
 
