@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1cd52841540118141957c1f9f45163c2
+guid: 25211d9ee920b724182942672cbd4c4c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,11 +123,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GJ charictor_0
+      name: GJ Player Running_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
+        y: 32
         width: 32
         height: 32
       alignment: 7
@@ -137,119 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b91400faa5d882448ba605f181bf6446
-      internalID: -1921888323
+      spriteID: bf93eaef5430ca64fa340edfd3c979ad
+      internalID: -2077488060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ charictor_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 156dd6967fc54ae4b9856dad8db2df88
-      internalID: 1044305661
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GJ charictor_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 60f6618992b27834f9ada101c640d06e
-      internalID: -2122099784
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GJ charictor_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c43742b85f757d40a7973a6315e24ba
-      internalID: -1207189771
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GJ charictor_4
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7bb7f27dbead71343ac02cfafbce41f5
-      internalID: -1851690728
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GJ charictor_5
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 435b124e4e510ef44bac09e781abd2cc
-      internalID: 606828924
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GJ charictor_6
+      name: GJ Player Running_1
       rect:
         serializedVersion: 2
         x: 32
@@ -263,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f190712f5a9f6ee4e83778d5ff9be14d
-      internalID: -1044908017
+      spriteID: ee3b2f12b2e72ac46a6d65a819a31ee6
+      internalID: 1218402594
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ charictor_7
+      name: GJ Player Running_2
       rect:
         serializedVersion: 2
         x: 64
@@ -284,17 +179,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56a383d8cf10d704085cd67e874f43bf
-      internalID: 1152469149
+      spriteID: 62d917090b4d40441996f44af0f6f72c
+      internalID: -1137211164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ charictor_8
+      name: GJ Player Running_3
       rect:
         serializedVersion: 2
-        x: 32
+        x: 0
         y: 0
         width: 32
         height: 32
@@ -305,29 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27584f7623d663a42b8c1c2b6bb4de6f
-      internalID: -1539187052
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GJ charictor_9
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e5c476c02f2fee143bb1f4355261a8a7
-      internalID: -876302962
+      spriteID: 6b6d98920a60d6a43a52ae7bb656b591
+      internalID: -232947574
       vertices: []
       indices: 
       edges: []
@@ -343,16 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GJ charictor_0: -1921888323
-      GJ charictor_1: 1044305661
-      GJ charictor_2: -2122099784
-      GJ charictor_3: -1207189771
-      GJ charictor_4: -1851690728
-      GJ charictor_5: 606828924
-      GJ charictor_6: -1044908017
-      GJ charictor_7: 1152469149
-      GJ charictor_8: -1539187052
-      GJ charictor_9: -876302962
+      GJ Player Running_0: -2077488060
+      GJ Player Running_1: 1218402594
+      GJ Player Running_2: -1137211164
+      GJ Player Running_3: -232947574
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
