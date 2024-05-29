@@ -15,13 +15,13 @@ public class Health : MonoBehaviour
 
     public void Damage(float damage)
     {
-        Debug.Log($"{name} took {damage}/{currentHealth} damge");
-
         currentHealth -= damage;
-        if (currentHealth <= 0f)
+        if (currentHealth <= 0.1f)
         {
             Die();
         }
+
+        Debug.Log($"{name} took {damage} damage. {currentHealth} health left.");
         attacked?.Invoke();
     }
 

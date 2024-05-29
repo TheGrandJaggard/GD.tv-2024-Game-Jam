@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] float speed;
+    [SerializeField] float damage;
     private float attackCooldown;
 
     private void Start()
@@ -21,12 +22,13 @@ public class Player : MonoBehaviour
     private void Act()
     {
         attackCooldown -= Time.deltaTime;
-        if (Input.GetButtonDown("Fire1") && attackCooldown < 0)
+        if (Input.GetButton("Fire1") && attackCooldown < 0)
         {
             GetComponent<Animator>().SetTrigger("Attack");
-            attackCooldown = 0.6f;
+            attackCooldown = 0.4f;
+            // Hit();
         }
-        if (Input.GetButtonDown("Fire2"))
+        if (Input.GetButton("Fire2"))
         {
             // special (gun or trap)
             // right now this is just a health / damage test
@@ -48,6 +50,30 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("I'm dying!");
+        Debug.Log("Game Over!");
+        Time.timeScale = 0;
+    }
+
+    private void Hit() // called by animator
+    {
+        var directionalOffset = Vector3.up * GetComponent<CapsuleCollider2D>().offset.y * transform.localScale.y
+            + (transform.rotation == new Quaternion() ? Vector3.left : Vector3.right);
+        Debug.Log($"transform.position + directionalOffset = {transform.position + directionalOffset}");
+        foreach (var other in Physics2D.OverlapCircleAll(transform.position + directionalOffset, 1f))
+        {
+            Debug.Log($"Hit {other.name}");
+            if (other.gameObject.CompareTag("Enemy"))
+            {
+                other.GetComponent<Health>().Damage(damage);
+                Debug.Log($"Damaged {other.name} with sword");
+            }
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        var directionalOffset = Vector3.up * GetComponent<CapsuleCollider2D>().offset.y * transform.localScale.y
+            + (transform.rotation == new Quaternion() ? Vector3.left : Vector3.right);
+        Gizmos.DrawWireSphere(transform.position + directionalOffset, 1f);
     }
 }

@@ -1,4 +1,3 @@
-using System;
 using DG.Tweening;
 using UnityEngine;
 
@@ -9,9 +8,12 @@ public class Enemy : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] EnemyTargetType targetType;
     [SerializeField] float damage;
+    [SerializeField] bool spriteFacingRight;
     private float attackCooldown;
     private bool haveBeenAttacked = false;
     private bool alive = true;
+
+
 
 
     private void Start()
@@ -41,8 +43,8 @@ public class Enemy : MonoBehaviour
         var targetDirection = targetVector.normalized;
         transform.position = transform.position + (targetDirection * Time.deltaTime * speed);
 
-        if (targetVector.x < -0.01f) { transform.rotation = new Quaternion(0f, 180f, 0f, 0f); }
-        if (targetVector.x > 0.01f) { transform.rotation = new Quaternion(0f, 0f, 0f, 0f); }
+        if (targetVector.x < -0f == spriteFacingRight) { transform.rotation = new Quaternion(0f, 180f, 0f, 0f); }
+        if (targetVector.x > 0f == spriteFacingRight) { transform.rotation = new Quaternion(0f, 0f, 0f, 0f); }
     }
 
     private Vector3 GetTarget()
@@ -74,12 +76,12 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("I'm dying!");
-        
         alive = false;
         GetComponent<Animator>().speed = 0;
 
-        transform.DORotate(new Vector3(0, 0, 100), 1f, RotateMode.Fast).SetEase(Ease.InOutElastic)
+        GetComponent<Collider2D>().enabled = false;
+
+        transform.DORotate(new Vector3(0, 0, 90), 1f, RotateMode.Fast)
             .onComplete += () => Destroy(gameObject);
     }
 
@@ -101,10 +103,9 @@ public class Enemy : MonoBehaviour
 
     private void Knockback(float magnitude)
     {
-        Debug.Log("Knocking myself back");
         Vector3 targetVector = GameObject.FindGameObjectWithTag("Player").transform.position - transform.position;
 
         var targetLocation = -targetVector.normalized * magnitude;
-        transform.DOMove(targetLocation, 1f).SetEase(Ease.OutFlash);
+        transform.DOMove(targetLocation, 1f).SetEase(Ease.OutExpo);
     }
 }

@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red-Green Slime
       objectReference: {fileID: 0}
+    - target: {fileID: 3069571191198779976, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6102937645611212799, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Controller
       value: 
@@ -82,7 +86,7 @@ PrefabInstance:
       objectReference: {fileID: -270347443, guid: e8e7b7a8a37ccca47bdd6f2da40a6e99, type: 3}
     - target: {fileID: 7104893916346297467, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: maxHealth
-      value: 4
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8729874961586547706, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Size.y
