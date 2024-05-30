@@ -2,6 +2,5 @@ enum EnemyTargetType
 {
     PlayerOnly,
     PlayerIfAttacked,
-    WallOnly,
-    AvoidPlayer
+    WallOnly
 }

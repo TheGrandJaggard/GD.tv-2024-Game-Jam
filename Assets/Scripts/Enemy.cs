@@ -62,11 +62,7 @@ public class Enemy : MonoBehaviour
                 return Vector3.left;
             }
         }
-        else if (targetType == EnemyTargetType.WallOnly)
-        {
-            return Vector3.left;
-        }
-        else // avoid player // TODO
+        else
         {
             return Vector3.left;
         }
