@@ -9,9 +9,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1624340537903296783, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624340537903296783, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -677054748, guid: ff44551ce151703499bf9df42fb124d5, type: 3}
+      objectReference: {fileID: -845066271, guid: cc997d8113767e643bbdc01abf06dad6, type: 3}
     - target: {fileID: 3069571191198779976, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Name
       value: Purple Crawler
@@ -23,7 +27,7 @@ PrefabInstance:
     - target: {fileID: 3373415295883372487, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 9695e28a4c1a71944ae9af4daa3dd485, type: 2}
+      objectReference: {fileID: 9100000, guid: f6c0a18baae934f4b9d71594f51905cb, type: 2}
     - target: {fileID: 6102937645611212799, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Controller
       value: 
@@ -62,12 +66,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6552918995226010708, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_FlipX
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6552918995226010708, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -36993427, guid: 205565a733674f840a888f624e7740d0, type: 3}
+    - target: {fileID: 6758582108393023735, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6758582108393023735, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6758582108393023735, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6758582108393023735, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6758582108393023735, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
     - target: {fileID: 6893873108110592998, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -75,6 +99,26 @@ PrefabInstance:
     - target: {fileID: 7104893916346297467, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: maxHealth
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7156998330551902326, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7156998330551902326, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7156998330551902326, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7156998330551902326, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7156998330551902326, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 7859464481732078349, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Controller
@@ -86,11 +130,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8729874961586547706, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Size.y
-      value: 1
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 8729874961586547706, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Offset.y
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8729874961586547706, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Direction

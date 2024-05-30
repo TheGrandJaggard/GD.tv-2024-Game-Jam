@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b61bc91da93d4db4e914c4e78320698e
+guid: 6827808faa424084090d298cfb1a03fc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,85 +123,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GJ Colored player Running_0
+      name: GJ greyscale color jumble PGBY_0
       rect:
         serializedVersion: 2
         x: 0
         y: 32
         width: 32
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e3988653f76d06468d65d6ed0d34459
-      internalID: 1671836635
+      spriteID: a059f49f2b3f1a74cb866d7a5deccca3
+      internalID: -2115608695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ Colored player Running_1
+      name: GJ greyscale color jumble PGBY_1
       rect:
         serializedVersion: 2
         x: 32
         y: 32
         width: 32
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7687ed1fd563e7741b5ac12ab0a9dd10
-      internalID: -1232966120
+      spriteID: 21bcceafa7bbf984f80652c2a9e221c0
+      internalID: 695790409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ Colored player Running_2
+      name: GJ greyscale color jumble PGBY_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c265b3ffbd445fe40b3a7a5f946e8512
-      internalID: 730350790
+      spriteID: 951a3161c72c8a5469f4287493c39035
+      internalID: -275879378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ Colored player Running_3
+      name: GJ greyscale color jumble PGBY_3
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87002bc6e608ee542b00e8adca21ba10
-      internalID: -598741136
+      spriteID: 54e10d8833ef3024e94116695ec340cb
+      internalID: 23982049
       vertices: []
       indices: 
       edges: []
@@ -217,10 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GJ Colored player Running_0: 1671836635
-      GJ Colored player Running_1: -1232966120
-      GJ Colored player Running_2: 730350790
-      GJ Colored player Running_3: -598741136
+      GJ greyscale color jumble PGBY_0: -2115608695
+      GJ greyscale color jumble PGBY_1: 695790409
+      GJ greyscale color jumble PGBY_2: -275879378
+      GJ greyscale color jumble PGBY_3: 23982049
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

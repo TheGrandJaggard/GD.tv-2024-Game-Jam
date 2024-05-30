@@ -159,7 +159,6 @@ MonoBehaviour:
   speed: 2
   targetType: 0
   damage: 20
-  spriteFacingRight: 0
   knockback: 2
 --- !u!114 &7104893916346297467
 MonoBehaviour:
@@ -248,7 +247,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b240ea16cb955c43a220608c7876dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeOutSprite: {fileID: 6552918995226010708}
+  fullHealthSprite: {fileID: 6552918995226010708}
+  noHealthSprite: {fileID: 1624340537903296783}
 --- !u!1 &7915974087994082178
 GameObject:
   m_ObjectHideFlags: 0

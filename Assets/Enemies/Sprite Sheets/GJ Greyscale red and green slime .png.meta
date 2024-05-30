@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b61bc91da93d4db4e914c4e78320698e
+guid: 76c1485031ee14d4982811fafe799869
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GJ Colored player Running_0
+      name: GJ Greyscale red and green slime _0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e3988653f76d06468d65d6ed0d34459
-      internalID: 1671836635
+      spriteID: 700db97067a2f874a9e9ab9263e81afc
+      internalID: -218902783
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ Colored player Running_1
+      name: GJ Greyscale red and green slime _1
       rect:
         serializedVersion: 2
         x: 32
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7687ed1fd563e7741b5ac12ab0a9dd10
-      internalID: -1232966120
+      spriteID: b3fc1bd035292344d8dab87c2b8f9275
+      internalID: 795198415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ Colored player Running_2
+      name: GJ Greyscale red and green slime _2
       rect:
         serializedVersion: 2
         x: 0
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c265b3ffbd445fe40b3a7a5f946e8512
-      internalID: 730350790
+      spriteID: 5f2e9815043cd094e848185327231bd1
+      internalID: 659197605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ Colored player Running_3
+      name: GJ Greyscale red and green slime _3
       rect:
         serializedVersion: 2
         x: 32
@@ -200,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87002bc6e608ee542b00e8adca21ba10
-      internalID: -598741136
+      spriteID: 3557a7e7f1395404e8c5f8386fe790c2
+      internalID: 842874296
       vertices: []
       indices: 
       edges: []
@@ -217,10 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GJ Colored player Running_0: 1671836635
-      GJ Colored player Running_1: -1232966120
-      GJ Colored player Running_2: 730350790
-      GJ Colored player Running_3: -598741136
+      GJ Greyscale red and green slime _0: -218902783
+      GJ Greyscale red and green slime _1: 795198415
+      GJ Greyscale red and green slime _2: 659197605
+      GJ Greyscale red and green slime _3: 842874296
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b61bc91da93d4db4e914c4e78320698e
+guid: e8e7b7a8a37ccca47bdd6f2da40a6e99
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GJ Colored player Running_0
+      name: GJ Green and Red slime_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
+        x: 6
+        y: 103
+        width: 20
+        height: 14
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e3988653f76d06468d65d6ed0d34459
-      internalID: 1671836635
+      spriteID: 079ed173db0bf0347a6d31edb77dcbfa
+      internalID: -270347443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ Colored player Running_1
+      name: GJ Green and Red slime_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
+        x: 5
+        y: 71
+        width: 22
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7687ed1fd563e7741b5ac12ab0a9dd10
-      internalID: -1232966120
+      spriteID: 850cbbb91f4cf7a42a6a1207035a3ab7
+      internalID: 319229531
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ Colored player Running_2
+      name: GJ Green and Red slime_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 4
+        y: 39
+        width: 23
+        height: 12
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c265b3ffbd445fe40b3a7a5f946e8512
-      internalID: 730350790
+      spriteID: 96332a23ca6f64140970196baf349a1f
+      internalID: 1750267083
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ Colored player Running_3
+      name: GJ Green and Red slime_3
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
+        x: 5
+        y: 7
+        width: 22
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87002bc6e608ee542b00e8adca21ba10
-      internalID: -598741136
+      spriteID: de0de2248f31fcb47a4e28dee60a7521
+      internalID: 623301052
       vertices: []
       indices: 
       edges: []
@@ -217,10 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GJ Colored player Running_0: 1671836635
-      GJ Colored player Running_1: -1232966120
-      GJ Colored player Running_2: 730350790
-      GJ Colored player Running_3: -598741136
+      GJ Green and Red slime_0: -270347443
+      GJ Green and Red slime_1: 319229531
+      GJ Green and Red slime_2: 1750267083
+      GJ Green and Red slime_3: 623301052
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

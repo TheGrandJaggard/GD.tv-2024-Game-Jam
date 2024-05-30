@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b61bc91da93d4db4e914c4e78320698e
+guid: 7c02c5cbc3017aa4f947a8b725c3ee3f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GJ Colored player Running_0
+      name: GJ corupt color wheel_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e3988653f76d06468d65d6ed0d34459
-      internalID: 1671836635
+      spriteID: 08385d67c7f3b26488177359d4c0dcb8
+      internalID: 395000377
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ Colored player Running_1
+      name: GJ corupt color wheel_1
       rect:
         serializedVersion: 2
         x: 32
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7687ed1fd563e7741b5ac12ab0a9dd10
-      internalID: -1232966120
+      spriteID: 954b4dbad3ca71b4ab740118970da030
+      internalID: 668086915
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ Colored player Running_2
+      name: GJ corupt color wheel_2
       rect:
         serializedVersion: 2
         x: 0
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c265b3ffbd445fe40b3a7a5f946e8512
-      internalID: 730350790
+      spriteID: ea918a79fdabae04b88de4b59dd2cd37
+      internalID: -871677505
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ Colored player Running_3
+      name: GJ corupt color wheel_3
       rect:
         serializedVersion: 2
         x: 32
@@ -200,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87002bc6e608ee542b00e8adca21ba10
-      internalID: -598741136
+      spriteID: bb80421706da96643bbf7b9874248bec
+      internalID: 1624206567
       vertices: []
       indices: 
       edges: []
@@ -217,10 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GJ Colored player Running_0: 1671836635
-      GJ Colored player Running_1: -1232966120
-      GJ Colored player Running_2: 730350790
-      GJ Colored player Running_3: -598741136
+      GJ corupt color wheel_0: 395000377
+      GJ corupt color wheel_1: 668086915
+      GJ corupt color wheel_2: -871677505
+      GJ corupt color wheel_3: 1624206567
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -28,7 +28,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Green-Red Slime Color
+  m_Name: Red-Green Slime Color
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:

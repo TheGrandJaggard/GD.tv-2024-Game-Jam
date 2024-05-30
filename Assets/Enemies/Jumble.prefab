@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &7680210573621188975
+--- !u!1001 &596478048939221986
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -11,10 +11,10 @@ PrefabInstance:
     - target: {fileID: 1624340537903296783, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -2102946268, guid: 740153335e9eef94982c6854c0d14fda, type: 3}
+      objectReference: {fileID: -2115608695, guid: 6827808faa424084090d298cfb1a03fc, type: 3}
     - target: {fileID: 3069571191198779976, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Name
-      value: Blue Blob
+      value: Jumble
       objectReference: {fileID: 0}
     - target: {fileID: 3069571191198779976, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_TagString
@@ -23,18 +23,14 @@ PrefabInstance:
     - target: {fileID: 3373415295883372487, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 625eb98ecd687644089f26ea4ff61faf, type: 2}
+      objectReference: {fileID: 9100000, guid: 3b61ef782df2cef4f8784d5ec449ad72, type: 2}
     - target: {fileID: 6102937645611212799, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 9695e28a4c1a71944ae9af4daa3dd485, type: 2}
-    - target: {fileID: 6237533533128264078, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
-      propertyPath: damage
-      value: 10
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: 287fced5f4240944aa2fa1f82073544e, type: 2}
     - target: {fileID: 6237533533128264078, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: targetType
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6548626975473770743, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_LocalScale.x
@@ -67,34 +63,30 @@ PrefabInstance:
     - target: {fileID: 6552918995226010708, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -677054748, guid: ff44551ce151703499bf9df42fb124d5, type: 3}
-    - target: {fileID: 6758582108393023735, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 295812929, guid: f5b667f02d2401a429b5be0b64cd4917, type: 3}
     - target: {fileID: 6893873108110592998, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -677054748, guid: ff44551ce151703499bf9df42fb124d5, type: 3}
+      objectReference: {fileID: -270347443, guid: e8e7b7a8a37ccca47bdd6f2da40a6e99, type: 3}
     - target: {fileID: 7104893916346297467, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: maxHealth
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7859464481732078349, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 9695e28a4c1a71944ae9af4daa3dd485, type: 2}
-    - target: {fileID: 8539344681122388943, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
-      propertyPath: m_UseAutoMass
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: 88cdd7926dcacd44fbf8fafacfa2ff28, type: 2}
     - target: {fileID: 8729874961586547706, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Size.y
-      value: 1
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 8729874961586547706, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Offset.y
-      value: 0.9
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8729874961586547706, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
+      propertyPath: m_Direction
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

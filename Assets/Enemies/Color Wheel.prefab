@@ -11,10 +11,10 @@ PrefabInstance:
     - target: {fileID: 1624340537903296783, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -2102946268, guid: 740153335e9eef94982c6854c0d14fda, type: 3}
+      objectReference: {fileID: 1703498535, guid: 4d41d37d90ebe3f4f8138899be253bd5, type: 3}
     - target: {fileID: 3069571191198779976, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Name
-      value: Blue Blob
+      value: Color Wheel
       objectReference: {fileID: 0}
     - target: {fileID: 3069571191198779976, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_TagString
@@ -23,18 +23,22 @@ PrefabInstance:
     - target: {fileID: 3373415295883372487, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 625eb98ecd687644089f26ea4ff61faf, type: 2}
+      objectReference: {fileID: 9100000, guid: 5020dd49ae98489438a7d4a3b32a7a7d, type: 2}
     - target: {fileID: 6102937645611212799, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 9695e28a4c1a71944ae9af4daa3dd485, type: 2}
     - target: {fileID: 6237533533128264078, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
+      propertyPath: speed
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6237533533128264078, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: damage
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6237533533128264078, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: targetType
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6548626975473770743, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_LocalScale.x
@@ -67,7 +71,7 @@ PrefabInstance:
     - target: {fileID: 6552918995226010708, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -677054748, guid: ff44551ce151703499bf9df42fb124d5, type: 3}
+      objectReference: {fileID: 395000377, guid: 7c02c5cbc3017aa4f947a8b725c3ee3f, type: 3}
     - target: {fileID: 6758582108393023735, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.1
@@ -78,12 +82,12 @@ PrefabInstance:
       objectReference: {fileID: -677054748, guid: ff44551ce151703499bf9df42fb124d5, type: 3}
     - target: {fileID: 7104893916346297467, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: maxHealth
-      value: 50
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 7859464481732078349, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 9695e28a4c1a71944ae9af4daa3dd485, type: 2}
+      objectReference: {fileID: 9100000, guid: 74bdff76784c3b34b88282ac9261a55d, type: 2}
     - target: {fileID: 8539344681122388943, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_UseAutoMass
       value: 0
@@ -94,7 +98,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8729874961586547706, guid: 81c7f95ab4c811b449ecdb0184e39a88, type: 3}
       propertyPath: m_Offset.y
-      value: 0.9
+      value: 0.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

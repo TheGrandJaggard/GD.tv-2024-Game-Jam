@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 205565a733674f840a888f624e7740d0
+guid: f5b667f02d2401a429b5be0b64cd4917
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,85 +123,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GJ purple blob crawler_0
+      name: GJ color jumble PGBY_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f292e7eb29a814a920ea5621b1c3d6
+      internalID: 295812929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ color jumble PGBY_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06578e8313affae44aa2522ddadf02cd
+      internalID: -1288672696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ color jumble PGBY_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
+        width: 32
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1fe405fef24ac94bb7cdae2aac7b60b
-      internalID: -36993427
+      spriteID: ec8b7628fa9aa7f42af1cd14eaddfe37
+      internalID: 770231509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GJ purple blob crawler_1
+      name: GJ color jumble PGBY_3
       rect:
         serializedVersion: 2
-        x: 48
+        x: 32
         y: 0
-        width: 48
+        width: 32
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 121eb6cc862aafe48828ff2c041a652d
-      internalID: -544502219
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GJ purple blob crawler_2
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 48
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3fc41b04de1359f40877874ee0a87a9d
-      internalID: 1304417220
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GJ purple blob crawler_3
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 0
-        width: 48
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 643e710e63094314bb823356d32450ba
-      internalID: 1837874746
+      spriteID: e8846a999ba9ced4696d2d8e97831cdf
+      internalID: 919145640
       vertices: []
       indices: 
       edges: []
@@ -217,10 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GJ purple blob crawler_0: -36993427
-      GJ purple blob crawler_1: -544502219
-      GJ purple blob crawler_2: 1304417220
-      GJ purple blob crawler_3: 1837874746
+      GJ color jumble PGBY_0: 295812929
+      GJ color jumble PGBY_1: -1288672696
+      GJ color jumble PGBY_2: 770231509
+      GJ color jumble PGBY_3: 919145640
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
