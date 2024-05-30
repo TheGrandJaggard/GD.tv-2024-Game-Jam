@@ -1,3 +1,4 @@
+using System;
 using DG.Tweening;
 using UnityEngine;
 
@@ -104,5 +105,10 @@ public class Enemy : MonoBehaviour
         var targetDirection = -targetVector.normalized;
 
         GetComponent<Rigidbody2D>().AddForce(targetDirection * knockback, ForceMode2D.Impulse);
+    }
+
+    public void SetDamageMult(float damageMult)
+    {
+        damage *= damageMult;
     }
 }

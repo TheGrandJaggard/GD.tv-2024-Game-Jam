@@ -26,6 +26,11 @@ public class ColorFader : MonoBehaviour
         noHealthSprite.flipX = !facingRight;
     }
 
+    public bool IsFacingRight()
+    {
+        return fullHealthSprite.flipX;
+    }
+
     public void SetAnimTrigger(string name)
     {
         fullHealthSprite.GetComponent<Animator>().SetTrigger(name);

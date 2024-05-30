@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] float damage;
     [SerializeField] float range;
+    [SerializeField] float verticalOffset;
     private float attackCooldown;
 
     private void Start()
@@ -28,12 +29,6 @@ public class Player : MonoBehaviour
             GetComponent<ColorFader>().SetAnimTrigger("Attack");
             attackCooldown = 0.3f;
         }
-        if (Input.GetButton("Fire2"))
-        {
-            // special (gun or trap)
-            // right now this is just a health / damage test
-            GetComponent<Health>().Damage(40f);
-        }
     }
 
     private void Move()
@@ -53,15 +48,16 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("Game Over!");
-        Time.timeScale = 0;
+        GameObject.FindGameObjectWithTag("GameController")
+            .GetComponent<LevelManager>()
+            .GameOver();
     }
 
     public void Hit() // called by animator relay
     {
         // Debug.Log("Hit");
         var directionalOffset = Vector3.up * GetComponent<CapsuleCollider2D>().offset.y * transform.localScale.y
-            + (GetComponent<SpriteRenderer>().flipX ? Vector3.left : Vector3.right) * range;
+            + (GetComponent<ColorFader>().IsFacingRight() ? Vector3.left : Vector3.right) * range;
         
         foreach (var other in Physics2D.OverlapCircleAll(transform.position + directionalOffset, range))
         {
@@ -76,8 +72,8 @@ public class Player : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        var directionalOffset = Vector3.up * GetComponent<CapsuleCollider2D>().offset.y * transform.localScale.y
-            + (GetComponent<SpriteRenderer>().flipX ? Vector3.left : Vector3.right) * range;
+        var directionalOffset = Vector3.up * GetComponent<CapsuleCollider2D>().offset.y * transform.localScale.y * verticalOffset
+            + (GetComponent<ColorFader>().IsFacingRight() ? Vector3.left : Vector3.right) * range;
         Gizmos.DrawWireSphere(transform.position + directionalOffset, range);
     }
 }

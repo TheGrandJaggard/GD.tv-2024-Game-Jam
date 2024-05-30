@@ -34,4 +34,10 @@ public class Health : MonoBehaviour
     {
         death?.Invoke();
     }
+
+    public void SetHealthMult(float healthMult)
+    {
+        maxHealth *= healthMult;
+        currentHealth *= healthMult;
+    }
 }

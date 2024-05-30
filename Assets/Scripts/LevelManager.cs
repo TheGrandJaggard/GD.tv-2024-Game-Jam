@@ -7,6 +7,7 @@ public class LevelManager : MonoBehaviour
     // list of levels, each of which contains a list of enemies
     // spawns enemies and signals to ScoreKeeper every level
     [SerializeField] List<Level> levels;
+    [SerializeField] int startingLevel;
     private int currentLevel = 0;
     private int currentEnemiesDead = 0;
 
@@ -30,7 +31,7 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
-        currentLevel = -1;
+        currentLevel = startingLevel - 1;
         StartCoroutine(SpawnNextWave());
     }
 
@@ -53,5 +54,7 @@ public class LevelManager : MonoBehaviour
             10f, Random.Range(-5.5f, 1)
         );
         enemy.GetComponent<Health>().death += EnemyDied;
+        enemy.GetComponent<Health>().SetHealthMult(levels[currentLevel].damageAndHealthMult);
+        enemy.GetComponent<Enemy>().SetDamageMult(levels[currentLevel].damageAndHealthMult);
     }
 }
