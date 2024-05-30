@@ -243,6 +243,7 @@ MonoBehaviour:
   speed: 4
   damage: 20
   range: 1.2
+  verticalOffset: 1.6
 --- !u!114 &470659176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,7 +266,7 @@ Transform:
   m_GameObject: {fileID: 470659174}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -305,8 +306,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.7}
-  m_Size: {x: 0.5, y: 1.2}
+  m_Offset: {x: 0, y: 0.4}
+  m_Size: {x: 0.5, y: 0.8}
   m_Direction: 0
 --- !u!50 &470659181
 Rigidbody2D:
@@ -454,6 +455,7 @@ GameObject:
   - component: {fileID: 810802764}
   - component: {fileID: 810802765}
   - component: {fileID: 810802766}
+  - component: {fileID: 810802767}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Wall
@@ -571,8 +573,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b240ea16cb955c43a220608c7876dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fullHealthSprite: {fileID: 0}
-  noHealthSprite: {fileID: 0}
+  fullHealthSprite: {fileID: 106916370}
+  noHealthSprite: {fileID: 2070462154}
+--- !u!114 &810802767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810802759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a3ed788669f33942a9bcc9e643f972d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &850834544
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,7 +759,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -10, y: 0}
+  m_Offset: {x: -10, y: -0.75}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -756,7 +770,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 10}
+  m_Size: {x: 1, y: 8.5}
   m_EdgeRadius: 0
 --- !u!61 &1001949790
 BoxCollider2D:
@@ -835,7 +849,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 4.5}
+  m_Offset: {x: 0, y: 4}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -846,7 +860,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 19, y: 1}
+  m_Size: {x: 21, y: 1}
   m_EdgeRadius: 0
 --- !u!61 &1001949792
 BoxCollider2D:
@@ -880,7 +894,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 10, y: 0}
+  m_Offset: {x: 10, y: -0.75}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -891,7 +905,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 10}
+  m_Size: {x: 1, y: 8.5}
   m_EdgeRadius: 0
 --- !u!4 &1001949793
 Transform:
@@ -1128,7 +1142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2056300075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1142,26 +1156,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels:
-  - damageAndHealthMult: 0
+  - damageAndHealthMult: 1
     enemies:
     - {fileID: 4615301691293487911, guid: b78ce99492dfe2544addfdd825a560c0, type: 3}
-  - damageAndHealthMult: 0
+  - damageAndHealthMult: 1
     enemies:
     - {fileID: 2512537022908475818, guid: 61cdc38bd304abb43aa23ac6a7552582, type: 3}
     - {fileID: 6660728937931336656, guid: cd1b3d5b2d94b6a46ad8ca62f105be87, type: 3}
-  - damageAndHealthMult: 0
+  - damageAndHealthMult: 1
     enemies:
     - {fileID: 2512537022908475818, guid: 61cdc38bd304abb43aa23ac6a7552582, type: 3}
     - {fileID: 2512537022908475818, guid: 61cdc38bd304abb43aa23ac6a7552582, type: 3}
     - {fileID: 4615301691293487911, guid: b78ce99492dfe2544addfdd825a560c0, type: 3}
-  - damageAndHealthMult: 0
+  - damageAndHealthMult: 1
     enemies:
     - {fileID: 6660728937931336656, guid: cd1b3d5b2d94b6a46ad8ca62f105be87, type: 3}
     - {fileID: 6660728937931336656, guid: cd1b3d5b2d94b6a46ad8ca62f105be87, type: 3}
     - {fileID: 6660728937931336656, guid: cd1b3d5b2d94b6a46ad8ca62f105be87, type: 3}
     - {fileID: 4615301691293487911, guid: b78ce99492dfe2544addfdd825a560c0, type: 3}
     - {fileID: 4615301691293487911, guid: b78ce99492dfe2544addfdd825a560c0, type: 3}
-  - damageAndHealthMult: 0
+  - damageAndHealthMult: 1
     enemies:
     - {fileID: 2512537022908475818, guid: 61cdc38bd304abb43aa23ac6a7552582, type: 3}
     - {fileID: 2512537022908475818, guid: 61cdc38bd304abb43aa23ac6a7552582, type: 3}
@@ -1174,16 +1188,85 @@ MonoBehaviour:
     - {fileID: 2512537022908475818, guid: 61cdc38bd304abb43aa23ac6a7552582, type: 3}
     - {fileID: 2512537022908475818, guid: 61cdc38bd304abb43aa23ac6a7552582, type: 3}
     - {fileID: 2512537022908475818, guid: 61cdc38bd304abb43aa23ac6a7552582, type: 3}
-  - damageAndHealthMult: 0
-    enemies: []
-  - damageAndHealthMult: 0
-    enemies: []
-  - damageAndHealthMult: 0
-    enemies: []
-  - damageAndHealthMult: 0
-    enemies: []
-  - damageAndHealthMult: 0
-    enemies: []
+  - damageAndHealthMult: 1.5
+    enemies:
+    - {fileID: 4615301691293487911, guid: f7f87bd1d42ad9348ac3940d47304a7d, type: 3}
+    - {fileID: 4615301691293487911, guid: f7f87bd1d42ad9348ac3940d47304a7d, type: 3}
+  - damageAndHealthMult: 1.1
+    enemies:
+    - {fileID: 4615301691293487911, guid: b78ce99492dfe2544addfdd825a560c0, type: 3}
+    - {fileID: 4615301691293487911, guid: b78ce99492dfe2544addfdd825a560c0, type: 3}
+    - {fileID: 4615301691293487911, guid: f7f87bd1d42ad9348ac3940d47304a7d, type: 3}
+    - {fileID: 4615301691293487911, guid: f7f87bd1d42ad9348ac3940d47304a7d, type: 3}
+    - {fileID: 6660728937931336656, guid: cd1b3d5b2d94b6a46ad8ca62f105be87, type: 3}
+    - {fileID: 6660728937931336656, guid: cd1b3d5b2d94b6a46ad8ca62f105be87, type: 3}
+    - {fileID: 2512537022908475818, guid: 61cdc38bd304abb43aa23ac6a7552582, type: 3}
+    - {fileID: 2512537022908475818, guid: 61cdc38bd304abb43aa23ac6a7552582, type: 3}
+  - damageAndHealthMult: 1.2
+    enemies:
+    - {fileID: 6660728937931336656, guid: cd1b3d5b2d94b6a46ad8ca62f105be87, type: 3}
+    - {fileID: 6660728937931336656, guid: cd1b3d5b2d94b6a46ad8ca62f105be87, type: 3}
+    - {fileID: 6660728937931336656, guid: cd1b3d5b2d94b6a46ad8ca62f105be87, type: 3}
+    - {fileID: 4615301691293487911, guid: b78ce99492dfe2544addfdd825a560c0, type: 3}
+    - {fileID: 4615301691293487911, guid: b78ce99492dfe2544addfdd825a560c0, type: 3}
+    - {fileID: 4615301691293487911, guid: b78ce99492dfe2544addfdd825a560c0, type: 3}
+  - damageAndHealthMult: 1.4
+    enemies:
+    - {fileID: 2512537022908475818, guid: 61cdc38bd304abb43aa23ac6a7552582, type: 3}
+    - {fileID: 2512537022908475818, guid: 61cdc38bd304abb43aa23ac6a7552582, type: 3}
+    - {fileID: 2512537022908475818, guid: 61cdc38bd304abb43aa23ac6a7552582, type: 3}
+    - {fileID: 2512537022908475818, guid: 61cdc38bd304abb43aa23ac6a7552582, type: 3}
+    - {fileID: 4615301691293487911, guid: f7f87bd1d42ad9348ac3940d47304a7d, type: 3}
+    - {fileID: 4615301691293487911, guid: f7f87bd1d42ad9348ac3940d47304a7d, type: 3}
+    - {fileID: 4615301691293487911, guid: f7f87bd1d42ad9348ac3940d47304a7d, type: 3}
+    - {fileID: 4615301691293487911, guid: f7f87bd1d42ad9348ac3940d47304a7d, type: 3}
+  - damageAndHealthMult: 1.6
+    enemies:
+    - {fileID: 6660728937931336656, guid: cd1b3d5b2d94b6a46ad8ca62f105be87, type: 3}
+    - {fileID: 6660728937931336656, guid: cd1b3d5b2d94b6a46ad8ca62f105be87, type: 3}
+    - {fileID: 4615301691293487911, guid: b78ce99492dfe2544addfdd825a560c0, type: 3}
+    - {fileID: 6660728937931336656, guid: cd1b3d5b2d94b6a46ad8ca62f105be87, type: 3}
+    - {fileID: 4615301691293487911, guid: f7f87bd1d42ad9348ac3940d47304a7d, type: 3}
+    - {fileID: 6660728937931336656, guid: cd1b3d5b2d94b6a46ad8ca62f105be87, type: 3}
+    - {fileID: 2512537022908475818, guid: 61cdc38bd304abb43aa23ac6a7552582, type: 3}
+  - damageAndHealthMult: 1.6
+    enemies:
+    - {fileID: 2512537022908475818, guid: e2a1b75c67a599a4bac13e221cb4611d, type: 3}
+    - {fileID: 2512537022908475818, guid: e2a1b75c67a599a4bac13e221cb4611d, type: 3}
+    - {fileID: 4615301691293487911, guid: b78ce99492dfe2544addfdd825a560c0, type: 3}
+    - {fileID: 2512537022908475818, guid: e2a1b75c67a599a4bac13e221cb4611d, type: 3}
+    - {fileID: 4615301691293487911, guid: b78ce99492dfe2544addfdd825a560c0, type: 3}
+    - {fileID: 2512537022908475818, guid: e2a1b75c67a599a4bac13e221cb4611d, type: 3}
+    - {fileID: 4615301691293487911, guid: f7f87bd1d42ad9348ac3940d47304a7d, type: 3}
+  - damageAndHealthMult: 2
+    enemies:
+    - {fileID: 4615301691293487911, guid: 9dc61d769f84dd048bfbb8ba9ce5d879, type: 3}
+    - {fileID: 4615301691293487911, guid: 9dc61d769f84dd048bfbb8ba9ce5d879, type: 3}
+    - {fileID: 4615301691293487911, guid: 9dc61d769f84dd048bfbb8ba9ce5d879, type: 3}
+    - {fileID: 4615301691293487911, guid: b78ce99492dfe2544addfdd825a560c0, type: 3}
+    - {fileID: 6660728937931336656, guid: cd1b3d5b2d94b6a46ad8ca62f105be87, type: 3}
+  - damageAndHealthMult: 3
+    enemies:
+    - {fileID: 4615301691293487911, guid: b78ce99492dfe2544addfdd825a560c0, type: 3}
+    - {fileID: 6660728937931336656, guid: cd1b3d5b2d94b6a46ad8ca62f105be87, type: 3}
+    - {fileID: 2512537022908475818, guid: 61cdc38bd304abb43aa23ac6a7552582, type: 3}
+    - {fileID: 4615301691293487911, guid: f7f87bd1d42ad9348ac3940d47304a7d, type: 3}
+    - {fileID: 2512537022908475818, guid: e2a1b75c67a599a4bac13e221cb4611d, type: 3}
+    - {fileID: 4615301691293487911, guid: 9dc61d769f84dd048bfbb8ba9ce5d879, type: 3}
+  - damageAndHealthMult: 3
+    enemies:
+    - {fileID: 4615301691293487911, guid: b78ce99492dfe2544addfdd825a560c0, type: 3}
+    - {fileID: 6660728937931336656, guid: cd1b3d5b2d94b6a46ad8ca62f105be87, type: 3}
+    - {fileID: 2512537022908475818, guid: 61cdc38bd304abb43aa23ac6a7552582, type: 3}
+    - {fileID: 4615301691293487911, guid: f7f87bd1d42ad9348ac3940d47304a7d, type: 3}
+    - {fileID: 2512537022908475818, guid: e2a1b75c67a599a4bac13e221cb4611d, type: 3}
+    - {fileID: 4615301691293487911, guid: 9dc61d769f84dd048bfbb8ba9ce5d879, type: 3}
+    - {fileID: 4615301691293487911, guid: b78ce99492dfe2544addfdd825a560c0, type: 3}
+    - {fileID: 6660728937931336656, guid: cd1b3d5b2d94b6a46ad8ca62f105be87, type: 3}
+    - {fileID: 2512537022908475818, guid: 61cdc38bd304abb43aa23ac6a7552582, type: 3}
+    - {fileID: 4615301691293487911, guid: f7f87bd1d42ad9348ac3940d47304a7d, type: 3}
+    - {fileID: 2512537022908475818, guid: e2a1b75c67a599a4bac13e221cb4611d, type: 3}
+  startingLevel: 1
 --- !u!4 &2056300076
 Transform:
   m_ObjectHideFlags: 0
