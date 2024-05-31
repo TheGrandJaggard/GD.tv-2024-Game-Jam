@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] float range;
     [SerializeField] float verticalOffset;
     private float attackCooldown;
+    private bool dead = false;
 
     private void Start()
     {
@@ -17,6 +18,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        if (dead) { return; }
         Act();
         Move();
     }
@@ -55,17 +57,14 @@ public class Player : MonoBehaviour
 
     public void Hit() // called by animator relay
     {
-        // Debug.Log("Hit");
         var directionalOffset = Vector3.up * GetComponent<CapsuleCollider2D>().offset.y * transform.localScale.y
             + (GetComponent<ColorFader>().IsFacingRight() ? Vector3.left : Vector3.right) * range;
         
         foreach (var other in Physics2D.OverlapCircleAll(transform.position + directionalOffset, range))
         {
-            Debug.Log($"Hit {other.name}");
             if (other.gameObject.CompareTag("Enemy"))
             {
                 other.GetComponent<Health>().Damage(damage);
-                // Debug.Log($"Damaged {other.name} with sword");
             }
         }
     }
@@ -75,5 +74,10 @@ public class Player : MonoBehaviour
         var directionalOffset = Vector3.up * GetComponent<CapsuleCollider2D>().offset.y * transform.localScale.y * verticalOffset
             + (GetComponent<ColorFader>().IsFacingRight() ? Vector3.left : Vector3.right) * range;
         Gizmos.DrawWireSphere(transform.position + directionalOffset, range);
+    }
+
+    public void SetDead()
+    {
+        dead = true;
     }
 }

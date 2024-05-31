@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class LevelManager : MonoBehaviour
     // spawns enemies and signals to ScoreKeeper every level
     [SerializeField] List<Level> levels;
     [SerializeField] int startingLevel;
+    [SerializeField] GameObject endGameScreen;
     private int currentLevel = 0;
     private int currentEnemiesDead = 0;
 
@@ -31,7 +33,8 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
-        currentLevel = startingLevel - 1;
+        endGameScreen.gameObject.SetActive(false);
+        currentLevel = startingLevel;
         StartCoroutine(SpawnNextWave());
     }
 
@@ -56,5 +59,18 @@ public class LevelManager : MonoBehaviour
         enemy.GetComponent<Health>().death += EnemyDied;
         enemy.GetComponent<Health>().SetHealthMult(levels[currentLevel].damageAndHealthMult);
         enemy.GetComponent<Enemy>().SetDamageMult(levels[currentLevel].damageAndHealthMult);
+    }
+
+    public void GameOver()
+    {
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().SetDead();
+        endGameScreen.SetActive(true);
+        StartCoroutine(GoBackToMenu());
+    }
+
+    private IEnumerator GoBackToMenu()
+    {
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("MenuScene");
     }
 }
