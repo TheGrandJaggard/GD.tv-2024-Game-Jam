@@ -74,13 +74,13 @@ public class CutsceneScript : MonoBehaviour
         scene5.SetActive(false);
 
         scene6.SetActive(true);
-        scene6.transform.DOMove(new Vector3(2f, -1f, 0f), speed)
+        scene6.transform.DOMove(new Vector3(2f, 0f, 0f), speed)
             .SetEase(Ease.InCubic).onComplete += () => StartCoroutine(PlayGame());
     }
 
     private IEnumerator PlayGame()
     {
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.2f * speed);
         SceneManager.LoadScene("GameScene");
     }
 }

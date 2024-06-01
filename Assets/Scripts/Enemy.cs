@@ -10,7 +10,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] EnemyTargetType targetType;
     [SerializeField] float damage;
     [SerializeField] float knockback;
-    private float attackCooldown;
+    [SerializeField] AudioClip attackClip;
     private bool haveBeenAttacked = false;
     private bool alive = true;
 
@@ -84,17 +84,19 @@ public class Enemy : MonoBehaviour
         {
             other.gameObject.GetComponent<Health>().Damage(damage);
             GetComponent<Health>().Damage(damage);
-            if (alive) { Knockback(2f); }
+            GetComponent<AudioSource>().PlayOneShot(attackClip);
+            if (alive) { Knockback(); }
         }
         if (other.gameObject.CompareTag("Wall"))
         {
             var deathDamage = GetComponent<Health>().GetHealth();
             other.gameObject.GetComponent<Health>().Damage(deathDamage);
             GetComponent<Health>().Damage(deathDamage);
+            GetComponent<AudioSource>().PlayOneShot(attackClip);
         }
     }
 
-    private void Knockback(float magnitude)
+    private void Knockback()
     {
         Vector3 targetVector = GameObject.FindGameObjectWithTag("Player").transform.position - transform.position;
 

@@ -1,5 +1,7 @@
+using System.Collections;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 [RequireComponent(typeof(ColorFader))]
 [RequireComponent(typeof(Health))]
 public class Player : MonoBehaviour
@@ -8,6 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField] float damage;
     [SerializeField] float range;
     [SerializeField] float verticalOffset;
+    [SerializeField] AudioClip attackClip;
     private float attackCooldown;
     private bool dead = false;
 
@@ -67,6 +70,7 @@ public class Player : MonoBehaviour
                 other.GetComponent<Health>().Damage(damage);
             }
         }
+        GetComponent<AudioSource>().PlayOneShot(attackClip);
     }
 
     private void OnDrawGizmosSelected()

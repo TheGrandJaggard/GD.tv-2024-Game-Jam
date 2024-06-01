@@ -4,6 +4,7 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] float maxHealth;
+    [SerializeField] AudioClip damagedClip;
     private float currentHealth;
     public Action death;
     public Action attacked;
@@ -26,6 +27,7 @@ public class Health : MonoBehaviour
         GetComponent<ColorFader>()?.SetColor(currentHealth / maxHealth);
 
         attacked?.Invoke();
+        GetComponent<AudioSource>().PlayOneShot(damagedClip);
     }
 
     public float GetHealth() => currentHealth;
