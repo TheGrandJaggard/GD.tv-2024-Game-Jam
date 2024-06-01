@@ -8,6 +8,11 @@ public class MenuScript : MonoBehaviour
         SceneManager.LoadScene("CutsceneScene");
     }
 
+    public void SkipCutscene()
+    {
+        SceneManager.LoadScene("GameScene");
+    }
+
     public void ShowHighscores()
     {
 

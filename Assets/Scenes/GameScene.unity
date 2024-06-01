@@ -569,7 +569,6 @@ MonoBehaviour:
   range: 1.2
   verticalOffset: 1.6
   attackClip: {fileID: 8300000, guid: 4965361d4a60aed4ba4e03ccc38d373c, type: 3}
-  attackSFXDelay: 0
 --- !u!114 &470659176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2100,7 +2099,7 @@ MonoBehaviour:
     - {fileID: 2512537022908475818, guid: 61cdc38bd304abb43aa23ac6a7552582, type: 3}
     - {fileID: 4615301691293487911, guid: f7f87bd1d42ad9348ac3940d47304a7d, type: 3}
     - {fileID: 2512537022908475818, guid: e2a1b75c67a599a4bac13e221cb4611d, type: 3}
-  startingLevel: 0
+  startingLevel: -1
   endGameScreen: {fileID: 1588149515}
 --- !u!4 &2056300076
 Transform:
